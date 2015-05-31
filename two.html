@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="mainContent">
+        <h1>Learning to Hack: Getting Started</h1>
+        <h3>Required Knowledge</h3>
+        <ul>
+            <li>Networks and networking, ethernet and Wi-Fi protocols.</li>
+            <li>Network services, http, ftp, TCP/IP, dns, SMTP, DHCP, email, to start.</li>
+            <li>Hashing and encryption, the basics.</li>
+            <li>Programming languages, html, php, python, java, .NET, C/C++, perl, more is better.</li>
+        </ul>
+        <h3>The Operating System</h3>
+        <p>
+            Linux is an operating system built on the linux kernel developed by Linus Torvalds.  There are many "distributions" of linux, tailored to many different users and uses.  For our discussion, we will focus on the "penetration testing" distros.  The<a href="http://www.blackmoreops.com/2014/02/03/notable-penetration-test-linux-distributions-of-2014/"> Penetration Distro list</a> has <a href="http://www.kali.org/">Kali Linux</a> at the top.  I'm sure the others are quite good, but for the remainder of this tutorial, we will keep any examples to Kali.
+        </p>
+        <p>
+            The preferred method is to install Kali in an encrypted virtual machine.  Use strong passwords and phrases to avoid anyone hacking you.  Kali can also be run from a "live CD" or USB, although any changes made won't be persisted across reboots.  Refer to the <a href="http://docs.kali.org/"> Kali Documentation</a> for specifics.
+        </p>
+        <h3>Keep the Feds Off Your Back.</h3>
+        <p>
+            There are two preferred ways to anonymize or masquerade your real IP address.  One is free, and one is not.
+            <h5>VPN</h5>
+        </p>
+        <p>
+            This is the not-free method.  You have to pay a fee, monthly or yearly, to access the Virtual Private Network.  Read the Privacy Policy and Terms of Service before paying for any service.  Most of the activites we will discuss are prohibited on VPNs.  Although, most won't do anything, you are still at risk.  Yes, I know there are free VPN services, they are crap.  Use the next method if you need free.
+        </p>
+        <h5>Tor</h5>
+        <p>
+            The Onion Router.  We are not interested in the Tor Browser bundle, as our needs are different.  I <a href="https://www.torproject.org/docs/debian"> install Tor locally</a>, on a different VM or in Kali itself and use that as the proxy for the operating system's network. Installation is easy, however, it does require reading through and/or editing of the torrc file.  Tor installs as a service in Kali, so it can be setup to start on reboot.
+        </p>
+        <h5>Before You Start</h5>
+        <p>
+            Always, always check the IP address prior to testing.  <a href="http://ipchicken.com">Ip chicken</a> is a good home page for your browser.
+        </p>
+    </div>
+    <footer>
+        <div class="quotes">
+            <p>"Real Programmers don't comment their code. If it was hard to write, it should be hard to understand." ~ Anonymous</p>
+        </div>
+        <div class="navigation">
+            <a class="prev" href="one.html">Previous</a>
+            <a class="next" href="three.html">Next</a>
+        </div>
+        <div class="copyright">
+            &copy; 2014 to infinity by satan ~ For more info: irc://anonops.com #hackers
+        </div>
+    </footer>
+
+</body>
+</html>

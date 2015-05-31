@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Getting Serious</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="mainContent">
+        <h1>Learning to Hack: Metasploit Framework</h1>
+        <h3>Getting Serious</h3>
+        <p>
+            Now that you know about <a href="http://ha.ckers.org/fierce/">Fierce</a> and <a href="http://nmap.org/">nmap</a>, let's bring is all together with the <a href="http://www.metasploit.com/">Metasploit Framework</a> .  You can view a <a href="http://www.offensive-security.com/metasploit-unleashed/Main_Page">Getting Started guide here</a>.  Metasploit currently has over 800 tools and scripts for network testing. But the best feature, in my opinion, is that it integrates with the Postgreql database.  So all of the data from your scans can be stored and searched with relative ease.
+        </p>
+        <p>
+            To get started in Kali linux, issue the following commands:
+            <pre>
+                service postgresql start
+                service metasploit start
+            </pre>
+        <p>
+            The first time metasploit is run, it will take a few minutes to initialize the databases it needs.  Then run:
+        </p>
+        <pre>
+                msfconsole
+            </pre>
+        </p>
+        <p>
+            You are now in the metasploit shell.
+        </p>
+        <p>
+            I'm not going to go into the information provided in the Getting Started guide.  I will offer up some tips on using Metasploit in console mode.
+        </p>
+        <p>
+            I make frequent use of the
+            <pre>
+                workspace -a newworkspacename
+            </pre>
+            command.  I will add a workspace by the name of the domain I'm working with, just to keep everything organized.  Now, remember that file we made with nmap?  We can <a href="http://www.offensive-security.com/metasploit-unleashed/Using_the_Database#Importing_.26_Scanning">import the .xml file</a>  into metasploit using the
+            <pre>
+                db_import /path/to/xml/file
+            </pre>
+            command.  Now issue the
+            <pre>
+                hosts
+            </pre>
+            command to see the hosts that were imported into your workspace.  If you now issue the
+            <pre>
+                hosts -R
+            </pre>
+            command, all of the hosts will be used for whatever actions you may now take.
+        </p>
+    </div>
+    <footer>
+        <div class="quotes">
+            <p>"Experimentation is the key to successful learning." ~ Anonymous</p>
+        </div>
+        <div class="navigation">
+            <a class="prev" href="three.html">Previous</a>
+            <a class="next" href="five.html">Next</a>
+        </div>
+        <div class="copyright">
+            &copy; 2014 to infinity by satan ~ For more info: irc://anonops.com #hackers
+        </div>
+    </footer>
+</body>
+</html>
