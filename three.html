@@ -25,7 +25,7 @@
             <br />
             We want to know all of the DNS entries associated with domain.com.  We run Fierce and dump the results to a text file on the Desktop.
             <pre>perl /usr/bin/fierce -dns domain.com -file /root/Desktop/domain.com.txt</pre>
-            Opening domain.com.txt will show some IP addresses and their associated hostnames.  We want to copy/paste that block into a file called ip.domain.com.txt and remove the hostnames leaving only the IP addresses.
+            Opening domain.com.txt will show some IP addresses and their associated hostnames.  We want to copy/paste that block into a file called ip.domain.com.txt.  Removing everything except for the IP addresses.
             <h3>Scanning the Target(s)</h3>
             Using the file ip.domain.com.txt, we run a scan using nmap.
             <pre>nmap -vvvv -A -iL /root/Desktop/ip.domain.com.txt -oX /root/Desktop/nmap.domain.com.xml</pre>
