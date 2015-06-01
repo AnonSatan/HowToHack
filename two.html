@@ -18,22 +18,20 @@
         </ul>
         <h3>The Operating System</h3>
         <p>
-            Linux is an operating system built on the linux kernel developed by Linus Torvalds.  There are many "distributions" of linux, tailored to many different users and uses.  For our discussion, we will focus on the "penetration testing" distros.  The<a href="http://www.blackmoreops.com/2014/02/03/notable-penetration-test-linux-distributions-of-2014/"> Penetration Distro list</a> has <a href="http://www.kali.org/">Kali Linux</a> at the top.  I'm sure the others are quite good, but for the remainder of this tutorial, we will keep any examples to Kali.
-        </p>
-        <p>
-            The preferred method is to install Kali in an encrypted virtual machine.  Use strong passwords and phrases to avoid anyone hacking you.  Kali can also be run from a "live CD" or USB, although any changes made won't be persisted across reboots.  Refer to the <a href="http://docs.kali.org/"> Kali Documentation</a> for specifics.
+            Linux is an operating system built on the linux kernel developed by Linus Torvalds.  There are many "distributions" of linux, tailored to many different users and uses.  For our discussion, we will focus on the "penetration testing" distros.  The underlying linux distribution doesn't matter.  The tools you need can be installed on any distribution.  The 'pentesting' distros just assemble the tools into a nice package.  Usually a bloated package.  The preferred method is to install whatever you choose as an encrypted machine.  Either virtual or physical.  Use strong passwords and phrases to avoid anyone hacking you.
         </p>
         <h3>Keeping the Feds Off Your Back.</h3>
         <p>
-            There are two ways to mask your real IP address.  One is free, and one is not.
-            <h5>VPN, for privacy.</h5>
+            <h4>There are two ways to mask your real IP address.  One is free, and one is not.</h4>
         </p>
+            <h5>VPN, for privacy.</h5>
+
         <p>
             This is the non-free method.  You have to pay a fee, monthly or yearly, to access the Virtual Private Network.  Read the Privacy Policy and Terms of Service before paying for any service.  Most of the activites we will discuss are prohibited on VPNs.  Although, most won't do anything, you are still at risk.  Yes, I know there are free VPN services, they are crap.  Use the next method if you need free.
         </p>
         <h5>Tor, for anonymity.</h5>
         <p>
-            The Onion Router.  We are not interested in the Tor Browser bundle, as our needs are different.  I <a href="https://www.torproject.org/docs/debian"> install Tor locally</a>, on a different VM or in Kali itself and use that as the proxy for the operating system's network. Installation is easy, however, it does require reading through and/or editing of the torrc file.  Tor installs as a service in Kali, so it can be setup to start on reboot.
+            The Onion Router.  We are not interested in the Tor Browser bundle, as our needs are different.  I <a href="https://www.torproject.org/docs/debian"> install Tor locally</a>, on a different machine or in linux itself and use that as the proxy for the operating system's network. Installation is easy, however, it does require reading through and/or editing of the torrc file.  Tor installs as a service in most pentesting distros, so it can be setup quite easily.
         </p>
         <h5>Before You Start</h5>
         <p>
