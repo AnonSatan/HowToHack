@@ -13,25 +13,31 @@
         <h3>Packages</h3>
         <p>
             We'll start with software, known as "packages" in the linux world.
+        </p>
             <ul>
                 <li>Fierce, a DNS sniffer.</li>
                 <li>nmap, a network scanner.</li>
                 <li>The Metasploit Framework.</li>
             </ul>
-        </p>
+
         <h3>Acquiring a Target</h3>
         <p>
             Target = domain.com.  Now what?
-            <br />
+        </p>
+        <p>
             We want to know all of the DNS entries associated with domain.com.  We run Fierce and dump the results to a text file on the Desktop.
+        </p>
             <pre>perl /usr/bin/fierce -dns domain.com -file /root/Desktop/domain.com.txt</pre>
-            Opening domain.com.txt will show some IP addresses and their associated hostnames.  We want to copy/paste that block into a file called ip.domain.com.txt.  Removing everything except for the IP addresses.
+        <p>
+            Opening domain.com.txt will reveal some IP addresses and their associated hostnames.  We want to edit this text, leaving only the IP address and save this into a file called ips.domain.com.txt.
+        </p>
             <h3>Scanning the Target(s)</h3>
-            Using the file ip.domain.com.txt, we run a scan using nmap.
+        <p>
+            Using the file ips.domain.com.txt, we run a scan using nmap.
+        </p>
             <pre>nmap -vvvv -A -iL /root/Desktop/ip.domain.com.txt -oX /root/Desktop/nmap.domain.com.xml</pre>
-            This string will run namp with verbosity, OS/Version/script scanning and traceroute using the IPs listed in ip.domain.com.txt with an output file of nmap.domain.com.xml saved to the Desktop.  The xml file will be used to import the results into the Metasploit Framework.
-            <br /><br />
-            Of course, you can save the files to any folder.  I have found that some of the tools don't recognize using the ~/ for the home folder.  So I have become accustomed to using the absolute paths.
+        <p>
+            This string will run nmap with verbosity, OS/Version/script scanning and traceroute using the IPs listed in ips.domain.com.txt with an output file of nmap.domain.com.xml saved to the Desktop.  The xml file will be used to import the results into the Metasploit Framework.  Of course, you can save the files to any folder.  I have found that some of the tools don't recognize using the ~/ for the home folder.  So I have become accustomed to using the absolute paths.
         </p>
     </div>
     <footer>
