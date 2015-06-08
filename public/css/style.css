@@ -1,9 +1,11 @@
 body {
-  background-color: black;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  padding: 2%;
-  
+
 }
+
+.commandments {
+    font-size: larger;
+}
+/*
 h1, h2, h3 {
   color: green;
   text-align: center;
@@ -28,6 +30,5 @@ p {
 }
 hr {
   height: 2px; 
-  background-color: green;
-  border:none
-}
+
+}*/
