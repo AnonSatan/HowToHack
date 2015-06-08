@@ -5,6 +5,18 @@ body {
 .commandments {
     font-size: larger;
 }
+.quotes
+{
+    text-align: center;
+    font-size: 1.4em;
+}
+.copyright
+{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
 /*
 h1, h2, h3 {
   color: green;
