@@ -8,94 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <base href="/HowToHack/public/">
 </head>
-<body>
-<div class="container">
-    <div class="jumbotron">
-    <h1>The Hacker's 10 Commandments</h1>
-    </div>
-    <ol class="commandments">
-        <li>Be proactively paranoid, it doesn't work retroactively.</li>
-        <li>Keep personal activities and hacking activities completely separate.</li>
-        <li>Keep your personal environment contraband free.</li>
-        <li>Trust no one.</li>
-        <li>Never give anyone power over you.</li>
-        <li>Never reveal your plans.</li>
-        <li>Never reveal your operational details.</li>
-        <li>Never confuse recreation and hacking.</li>
-        <li>Never operate from your home IP.</li>
-        <li>Never talk to the police.</li>
-    </ol>
-    <h3>Appendix</h3>
-    <ul>
-        <li>No one is going to go to jail for you.</li>
-        <li>If you have to say, "don't tell anyone", don't FUCKING tell them!</li>
-        <li>If you have to talk to someone, talk to your lawyer.</li>
-        <li>Don't hang out in hacker channels on IRC to make friends.</li>
-    </ul>
-    <hr/>
-    <h2>Personas (nicks, handles, aliases, covers)</h2>
-
-    <h3>Avoid Contamination</h3>
-    <ul>
-        <li>Danger to personas is <em>cross-contamination</em>.</li>
-        <li>Contact between personas contaminates both of them.</li>
-        <li>Keep personas isolated from each other.</li>
-        <li>ProTip: Don't use your real first name as your username.</li>
-    </ul>
-    <h3>Layer your Defenses.</h3>
-    <ul>
-        <li>A persona is most effective at the end.</li>
-        <li>Prepare multiple personas.</li>
-        <li>Prepare to replace personas at anytime.</li>
-    </ul>
-    <h3>Fail safe and secure.</h3>
-    <ul>
-        <li>Your primary cover persona is your first identity.</li>
-        <li>Have a back stop persona ready.</li>
-        <li>Use secondary cover personas as needed.</li>
-        <li>Tor all the things!</li>
-    </ul>
-    <h3>VPN vs. TOR</h3>
-    <ul>
-        <li>VPNs provide <em>privacy</em> (data).</li>
-        <li>TOR provides <em>anonymity </em>(you).</li>
-        <li>Confuse the two at your own peril!</li>
-    </ul>
-    <h1>No logs, no crime.</h1>
-
-
-    <hr/>
-    <h1>Pitfalls</h1>
-
-    <h2>Personal info is profiling info</h2>
-
-    <h3>Location revealing information.</h3>
-    <ul>
-        <li>Weather</li>
-        <li>Time</li>
-        <li>Political events</li>
-    </ul>
-    <h3>Misdirect. LIE!</h3>
-    <ul>
-        <li>Do not discuss personal information, e.g. where you are from.</li>
-        <li>Do not include personal information in you online identity, e.g. nick, username, etc.</li>
-        <li>Do not mention your physical traits, e.g. gender, tatoos, piercings, or physical capacities.</li>
-        <li>Do not mention your profession, hobbies or involvement in activist groups.</li>
-        <li>Do not post information to the regular internet while you are anonymous in IRC.</li>
-        <li>Do not use Twitter or Facebook.</li>
-        <li>Do not post links to Facebook images. The image contains a personal ID.</li>
-    </ul>
-    <h2>Anti-Location Profiling</h2>
-    <ul>
-        <li>Do not keep regular hours / habits (This can reveal your timezone, geographic locale).</li>
-        <li>Do not use special characters on you keyboard unique to your language.</li>
-    </ul>
-    <h2>Practice safety or perish alone.</h2>
-
-    <h2>Hackers are no longer an apex predator. The LEOs are.</h2>
-
-</div>
+<body ng-app="hthApp">
+<ui-view></ui-view>
 <footer>
     <div class="quotes">
         <p>"If you ask how to hack, you are not ready to hack."</p>
@@ -108,8 +24,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-resource.min.js"></script>
-
-
+<script src="js/angular-ui-router.js"></script>
+<script src="js/hacker.js"></script>
 </body>
 </html>
 

@@ -1,9 +1,13 @@
 body {
     padding-top: 50px;
 }
+.jumbotron {
+    border: solid black 1px;
+}
 
 .commandments {
     font-size: larger;
+    font-weight: bold;
 }
 .quotes
 {
@@ -16,31 +20,3 @@ body {
     padding-bottom: 20px;
 
 }
-
-/*
-h1, h2, h3 {
-  color: green;
-  text-align: center;
-
-}
-a {
-  color: green;  
-}
-p {
-  color: green;
-  text-align: center;
-}
-.list ul {
-  list-style-type: none;
-  text-align: center;
-}
-.list li {
-  color: yellow;
-}
-.list li::before {
-  content: "\2022  "
-}
-hr {
-  height: 2px; 
-
-}*/
