@@ -2,4 +2,7 @@
 .idea
 *.xml
 *.iml
-
+angular*
+jquery*
+bootstrap*
+theme.css
