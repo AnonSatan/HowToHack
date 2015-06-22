@@ -9,9 +9,10 @@
                 .state("one", {url: "/one", templateUrl: "./templates/one.html"})
                 .state("two", {url: "/two", templateUrl: "./templates/two.html"})
                 .state("three", {url: "/three", templateUrl: "./templates/three.html"})
-                .state("four", {url: "/four", templateUrl: "./templates/four.html"});
+                .state("four", {url: "/four", templateUrl: "./templates/four.html"})
+                .state("five", {url: "/five", templateUrl: "./templates/five.html"})
+                .state("admin", {url: "/five", templateUrl: "./templates/admin.html"});
             $urlRouterProvider.otherwise("/");
             $locationProvider.html5Mode(true);
         }])
-
 }());
