@@ -11,7 +11,7 @@
                 .state("three", {url: "/three", templateUrl: "./templates/three.html"})
                 .state("four", {url: "/four", templateUrl: "./templates/four.html"})
                 .state("five", {url: "/five", templateUrl: "./templates/five.html"})
-                .state("admin", {url: "/five", templateUrl: "./templates/admin.html"});
+                .state("admin", {url: "/admin", templateUrl: "./templates/admin.html"});
             $urlRouterProvider.otherwise("/");
             $locationProvider.html5Mode(true);
         }])
