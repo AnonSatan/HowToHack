@@ -5,6 +5,6 @@
             return {
                 restrict: 'E',
                 templateUrl: "./templates/hthNav.html"
-            }
-        })
+            };
+        });
 }());

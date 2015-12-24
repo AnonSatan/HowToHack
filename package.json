@@ -1,0 +1,33 @@
+{
+  "name": "howtohack",
+  "version": "0.0.1",
+  "description": "The hacker's ten commandments, and more.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node /server/app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnonSatan/HowToHack.git"
+  },
+  "keywords": [
+    "hacking",
+    "programming",
+    "how-to",
+    "coding",
+    "testing"
+  ],
+  "author": "AnonSatan",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/AnonSatan/HowToHack/issues"
+  },
+  "homepage": "https://github.com/AnonSatan/HowToHack#readme",
+  "dependencies": {
+    "angular": "file:/public/js/angular.min.js"
+  },
+  "devDependencies": {
+
+  }
+}
