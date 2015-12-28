@@ -8,8 +8,7 @@
     app.use(express.static('templates'));
 
     app.all('/*', function (req, res) {
-        console.log(req.path);
-        res.sendFile('index.html', {root: __dirname});
+        res.sendFile('index.html', {root: __dirname + '/public'});
     });
 
     app.listen(3000, function () {
