@@ -1,0 +1,32 @@
+{
+  "name": "howtohack",
+  "description": "The hacker's ten commandments, and more.",
+  "main": "index.html",
+  "authors": [
+    "AnonSatan"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "hacking",
+    "programming",
+    "how-to",
+    "coding",
+    "testing"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.6"
+  }
+}
