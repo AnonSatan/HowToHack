@@ -1,0 +1,16 @@
+{
+  "ext": "js",
+  "restartable": "rs",
+  "verbose": "false",
+  "watch": [
+    "public/js"
+  ],
+  "ignore": [
+    ".gitignore",
+    "node_modules",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "LICENSE"
+  ]
+}
