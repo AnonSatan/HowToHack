@@ -1,0 +1,10 @@
+.name
+.idea
+*.xml
+*.iml
+angular*
+jquery*
+bootstrap*
+theme.css
+favicon.ico
+node_modules
