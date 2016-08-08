@@ -9,3 +9,4 @@ theme.css
 favicon.ico
 node_modules
 gulpfile.js
+toolData.js

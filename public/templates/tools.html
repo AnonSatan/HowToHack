@@ -1,0 +1,17 @@
+<div ng-app="hthApp" class="container-fluid" ng-controller="toolCtrl">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Tool Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="tool in tools">
+                <td><a href="{{tool.url}}">{{tool.name}}</a></td>
+                <td>{{tool.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

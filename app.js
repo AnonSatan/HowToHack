@@ -4,6 +4,7 @@
     var express = require('express'),
         app = express();
     app.use(express.static('public'));
+    app.use(express.static('server'));
     app.use(express.static('node_modules'));
     app.use(express.static('templates'));
 

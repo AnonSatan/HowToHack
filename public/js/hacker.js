@@ -28,9 +28,21 @@
                     url: "/five",
                     templateUrl: "./templates/five.html"
                 })
-                .state("software", {
-                    url: "/software",
-                    templateUrl: "./templates/software.html"
+                .state("signUp", {
+                    url: "/signUp",
+                    templateUrl: "./templates/signUp.html"
+                })
+                .state("signIn", {
+                    url: "/signIn",
+                    templateUrl: "./templates/signIn.html"
+                })
+                .state("tools", {
+                    url: "/tools",
+                    templateUrl: "./templates/tools.html"
+                })
+                .state("addTool", {
+                    url: "/addtool",
+                    templateUrl: "./templates/addTool.html"
                 })
                 .state("admin", {
                     url: "/admin",
