@@ -3,7 +3,9 @@
   "restartable": "rs",
   "verbose": "false",
   "watch": [
-    "public/js"
+    "public/js",
+    "server/js",
+    "app.js"
   ],
   "ignore": [
     ".gitignore",
