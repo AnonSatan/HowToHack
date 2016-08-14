@@ -26,9 +26,10 @@
   },
   "homepage": "https://github.com/AnonSatan/HowToHack#readme",
   "dependencies": {
-    "body-parser": "^1.14.2",
+    "body-parser": "^1.15.2",
     "express": "^4.13.3",
-    "mongodb": "^2.2.4"
+    "mongoose": "^4.5.8",
+    "node-restful": "^0.2.5"
   },
   "devDependencies": {
     "gulp": "^3.9.0"
