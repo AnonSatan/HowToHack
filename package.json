@@ -1,6 +1,6 @@
 {
   "name": "howtohack",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "The hacker's ten commandments, and more.",
   "main": "index.html",
   "scripts": {
