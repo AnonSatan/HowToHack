@@ -16,10 +16,9 @@
     app.use('/api', require('./server/js/routes'));
 
     mongoose.connect('mongodb://10.0.0.8:27017/test');
-        /*    app.all('/!*', function (req, res) {
-            res.sendFile('index.html', {root: __dirname + '/public'});
-        });*/
-
+    app.all('/!*', function (req, res) {
+        res.sendFile('index.html', {root: __dirname + '/public'});
+    });
     app.listen(3000, function () {
         console.log('Express server listening on port 3000...');
     });

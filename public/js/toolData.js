@@ -1,7 +1,6 @@
 (function () {
     "use strict";
-
-    angular.module('hthApp').controller('toolCtrl', function ($scope) {
+    angular.module('hthApp').controller('toolData', function ($scope) {
         $scope.tools = [
             {name: 'Admin Control Panel Finder',
                 url: 'http://packetstormsecurity.com/files/92222/Admin-Control-Panel-Finder-2.0.html',
@@ -97,5 +96,4 @@
                 }
         ];
     });
-    exports.module('toolCtrl');
 }());
