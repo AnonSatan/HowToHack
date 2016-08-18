@@ -1,4 +1,4 @@
 (function () {
     "use strict";
-    var hthApp = angular.module("hthApp", []);
+    angular.module("hthApp", []);
 }());

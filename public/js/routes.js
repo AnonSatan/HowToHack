@@ -43,7 +43,17 @@
                     })
                     .state("addTool", {
                         url: "/addtool",
-                        templateUrl: "./templates/addTool.html"
+                        templateUrl: "./templates/addTool.html",
+                        controller: "toolController"
+                    })
+                    .state("editTool", {
+                        url: "/edittool",
+                        templateUrl: "./templates/editTool.html",
+                        controller: "toolController"
+                    })
+                    .state("programming", {
+                        url: "/programming",
+                        templateUrl: "./templates/programming.html"
                     })
                     .state("admin", {
                         url: "/admin",
