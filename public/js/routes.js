@@ -38,7 +38,8 @@
                     })
                     .state("tools", {
                         url: "/tools",
-                        templateUrl: "./templates/tools.html"
+                        templateUrl: "./templates/tools.html",
+                        controller: "toolController"
                     })
                     .state("addTool", {
                         url: "/addtool",
