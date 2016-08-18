@@ -1,9 +1,9 @@
 (function () {
     "use strict";
-    angular.module('hthApp')
-        .directive('hthTabs', function () {
+    angular.module("hthApp")
+        .directive("hthTabs", function () {
             return {
-                restrict: 'E',
+                restrict: "E",
                 templateUrl: "./templates/hthTabs.html"
             };
         });

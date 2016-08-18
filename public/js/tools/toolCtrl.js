@@ -7,5 +7,6 @@
                 $scope.tools = data;
             });
     }
-    angular.module('hthApp').controller('toolController', toolController);
+
+    angular.module("hthApp").controller("toolController", toolController);
 }());
