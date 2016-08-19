@@ -1,10 +1,10 @@
 (function () {
     "use strict";
-    function toolController($scope, $location, $log, toolService) {
+    function toolController($scope, $location, $log, toolService, $stateParams) {
 
         $scope.newTool = {};
 
-//        $scope.id = $stateParams._id;
+        $scope.id = $stateParams._id;
 
         $scope.tools = toolService.getTools()
             .then(function (data) {
@@ -46,5 +46,5 @@
         };
     }
 
-    angular.module("hthApp").controller("toolController", ["$scope", "$location", "$log", "toolService", toolController]);
+    angular.module("hthApp").controller("toolController", ["$scope", "$location", "$log", "toolService", "$stateParams", toolController]);
 }());
