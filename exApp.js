@@ -6,7 +6,7 @@
         bodyParser = require("body-parser"),
         app = express();
 //
-    mongoose.connect("mongodb://localhost/test");
+    mongoose.connect("mongodb://10.0.0.8:27017/HowToHack");
     mongoose.Promise = global.Promise;
 
     app.use(express.static("public"));

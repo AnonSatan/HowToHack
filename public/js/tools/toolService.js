@@ -2,16 +2,25 @@
     "use strict";
     function toolService($http, $q) {
 
+        function getToolData(response) {
+            return response.data;
+        }
+
+        function getToolError(response) {
+            return $q.reject("Error retrieving tool. (HTTP status: " + response.status + ")");
+        }
+
         function getToolsData(response) {
             return response.data;
         }
 
         function getToolsError(response) {
-            return $q.reject("Error retrieving tool(s). (HTTP status: " + response.status + ")");
+            return $q.reject("Error retrieving tools. (HTTP status: " + response.status + ")");
         }
 
         function editToolSuccess(response) {
-            return "Tool updated" + response.config.data.name;
+            //return "Tool updated" + response.config.data.name;
+            return response.data;
         }
 
         function editToolError(response) {
@@ -37,39 +46,37 @@
         function getTools() {
             return $http({
                 method: "GET",
-                url: "/api/tools"
+                url: "/api/tools/"
             })
                 .then(getToolsData)
                 .catch(getToolsError);
         }
 
-        function getToolByID() {
+        function getToolByID(id) {
             return $http({
                 method: "GET",
-                url: "/api/tools/:id",
-                id: "_id"
+                url: "/api/tools/" + id
             })
-                .then(getToolsData)
-                .catch(getToolsError);
+                .then(getToolData)
+                .catch(getToolError);
         }
 
-        function editTool(tool) {
+        function editTool(id) {
             return $http({
                 method: "PUT",
-                url: "/api/tools/:id",
-                data: tool
+                url: "/api/tools/" + id._id,
+                data: id
             })
                 .then(editToolSuccess)
                 .catch(editToolError);
         }
 
-        function deleteTool(tool) {
+        function deleteTool(id) {
             return $http({
                 method: "DELETE",
-                url: "/api/tools/:id",
-                data: tool
+                url: "/api/tools/" + id._id
             })
-                .then(deleteToolSuccess())
+                .then(deleteToolSuccess)
                 .catch(deleteToolError);
         }
 

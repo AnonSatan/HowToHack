@@ -49,7 +49,8 @@
                 .state("editTool", {
                     url: "/edittool/:id",
                     templateUrl: "./templates/editTool.html",
-                    controller: "toolController"
+                    controller: "toolController",
+                    controllerAs: "model"
                 })
                 .state("programming", {
                     url: "/programming",

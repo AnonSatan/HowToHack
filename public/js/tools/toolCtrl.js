@@ -4,14 +4,14 @@
 
         $scope.newTool = {};
 
-        $scope.id = $stateParams._id;
+        var id = $stateParams.id;
 
         $scope.tools = toolService.getTools()
             .then(function (data) {
                 $scope.tools = data;
             });
 
-        $scope.tool = toolService.getToolByID()
+        $scope.tool = toolService.getToolByID(id)
             .then(function (data) {
                 $scope.tool = data;
             });
@@ -27,15 +27,25 @@
 
         function updateToolSuccess(message) {
             $log.info(message);
-            $location.path('/tools');
+            $location.path("/");
         }
 
         function updateToolError(errorMessage) {
             $log.error(errorMessage);
         }
 
-        $scope.updateTool = function (tool) {
-            toolService.addTool(tool)
+        function removeToolSuccess(message) {
+            $log.info(message);
+            $location.path("/");
+
+        }
+
+        function removeToolError(errorMessage) {
+            $log.error(errorMessage);
+        }
+
+        $scope.updateTool = function () {
+            toolService.editTool($scope.tool)
                 .then(updateToolSuccess)
                 .catch(updateToolError);
         };
@@ -43,6 +53,12 @@
             toolService.addTool($scope.newTool)
                 .then(addToolSuccess)
                 .catch(addToolError);
+        };
+        $scope.removeTool = function () {
+            toolService.deleteTool($scope.tool)
+                .then(removeToolSuccess)
+                .catch(removeToolError);
+
         };
     }
 
