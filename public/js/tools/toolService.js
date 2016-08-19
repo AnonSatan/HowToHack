@@ -1,6 +1,7 @@
 (function () {
     "use strict";
     function toolService($http, $q) {
+
         function getToolsData(response) {
             return response.data;
         }
@@ -18,7 +19,7 @@
         }
 
         function addToolSuccess(response) {
-            return "Tool Added" + response.status;
+            return "Tool Added " + response.status;
         }
 
         function addToolError(response) {
@@ -42,10 +43,11 @@
                 .catch(getToolsError);
         }
 
-        function getToolByID(id) {
+        function getToolByID() {
             return $http({
                 method: "GET",
-                url: "/api/tools/" + id
+                url: "/api/tools/:id",
+                id: "_id"
             })
                 .then(getToolsData)
                 .catch(getToolsError);
@@ -61,16 +63,6 @@
                 .catch(editToolError);
         }
 
-        function addTool(tool) {
-            return $http({
-                method: "POST",
-                url: "/api/tools",
-                data: tool
-            })
-                .then(addToolSuccess)
-                .catch(addToolError);
-        }
-
         function deleteTool(tool) {
             return $http({
                 method: "DELETE",
@@ -79,6 +71,18 @@
             })
                 .then(deleteToolSuccess())
                 .catch(deleteToolError);
+        }
+
+        function addTool(newTool) {
+
+            return $http({
+                method: "POST",
+                url: "/api/tools",
+                data: newTool
+            })
+                .then(addToolSuccess)
+                .catch(addToolError);
+
         }
 
         return {

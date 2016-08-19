@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    angular.module("hthApp", ["ui.router"])
+    angular.module("hthApp")
         .config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
                 function ($stateProvider, $urlRouterProvider, $locationProvider) {
             $stateProvider
@@ -47,7 +47,7 @@
                     controller: "toolController"
                 })
                 .state("editTool", {
-                    url: "/edittool",
+                    url: "/edittool/:id",
                     templateUrl: "./templates/editTool.html",
                     controller: "toolController"
                 })

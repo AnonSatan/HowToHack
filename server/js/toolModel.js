@@ -5,7 +5,10 @@
         toolSchema = new mongoose.Schema({
             name: String,
             url: String,
-            description: String
+            description: String,
+            installation: String,
+            helptext: String,
+            examples: String
         });
     module.exports = restful.model('Tools', toolSchema);
 }());

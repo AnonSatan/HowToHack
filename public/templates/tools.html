@@ -5,13 +5,17 @@
             <tr>
                 <th>Tool Name</th>
                 <th>Description</th>
+                <th>Edit</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="tool in tools | orderBy: '+name'">
                 <td><a href="{{tool.url}}">{{tool.name}}</a></td>
                 <td>{{tool.description}}</td>
+                <td><a href="/edittool/{{tool._id}}">Edit</a></td>
             </tr>
         </tbody>
     </table>
 </div>
+
+<!--"/edittool/{{tool.id}}"-->

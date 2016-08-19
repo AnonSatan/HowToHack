@@ -1,4 +1,4 @@
 (function () {
     "use strict";
-    angular.module("hthApp", []);
+    var hthApp = angular.module("hthApp", ["ui.router"]);
 }());
